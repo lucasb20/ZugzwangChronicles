@@ -1,24 +1,17 @@
-# README
+# Zugzwang Chronicles
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Zugzwang Chronicles é um projeto de Blog Pessoal de Xadrez. Esse nome foi escolhido porque eu adoro um finalzinho. Coisas a adicionar -> Ter uma conta, realizar posts e ver notícias de xadrez.
 
-Things you may want to cover:
+* Ruby 3.2.2 (2023-03-30 revision e51014f9c0)
 
-* Ruby version
-
-* System dependencies
+* Recomendado usar Unix x86_64
 
 * Configuration
 
-* Database creation
-
-* Database initialization
-
 * How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+* Adiministrar uma conta, podendo criar, configurar e utilizar.
 
-* Deployment instructions
+* Realizar posts, sendo possível criar, ler, editar ou deletar.
 
-* ...
+* Notícias de Xadrez, referênciando de alguma página famosa.
