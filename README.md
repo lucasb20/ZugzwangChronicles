@@ -16,4 +16,4 @@ Por enquanto o Blog está extremamente simples, apenas alguns controllers e aç�
 
 * Comment   -> Comentários com CRUD (Associado a um Article).
 
-* Feed  -> Notícias de Xadrez, referênciando de alguma página famosa.
+* Feed  -> Notícias de Xadrez, referenciado da página do chess.com/news.
