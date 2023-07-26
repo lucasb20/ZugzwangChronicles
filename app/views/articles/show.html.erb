@@ -1,17 +1,33 @@
-<h1>Página Show.</h1>
+<header>
+    <h1>Página Show.</h1>
+    
+    <nav>
+        <ul>
+            <li class="but_navegar"><%= link_to "Back", articles_path%></li>
+        </ul>
+    </nav>
+</header>
 
-<h2><%= @article.title %></h2>
-<p>
-    <%= @article.body %>
-</p>
+<div class="show_article">
+    <h2><%= @article.title %></h2>
+    <p>
+        <%= @article.body %>
+    </p>
+</div>
 
-<h3><%= link_to "Edit", edit_article_path(@article) %></h3>
-<h3><%= button_to 'Delete', article_path(@article), method: :delete, data: { confirm: 'Are you sure?' } %>
-</h3>
-<h3><%= link_to "Back", articles_path%></h3>
+<ul class="edicao">
+    <li class="but_navegar"><%= link_to "Edit", edit_article_path(@article) %></li>
+    <li class="_navegar"><%= button_to 'Delete', article_path(@article), method: :delete, data: { confirm: 'Are you sure?' } %></li>
+</ul>
 
-<h2>Add a comment:</h2>
-<%= render 'comments/form'%>
-
-<h2>Comments</h2>
-<%= render @article.comments %>
+<div class="comments">
+    <div>
+        <h3>Add a comment:</h3>
+        <div><%= render 'comments/form'%></div>
+    </div>
+    
+    <div>
+        <h3>Comments</h3>
+        <div><%= render @article.comments %></div>
+    </div>
+</div>

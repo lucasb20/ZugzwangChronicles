@@ -1,9 +1,15 @@
 <h1>Notícias de Xadrez</h1>
 
-<%= link_to "Back", root_path %>
+<nav>
+    <ul>
+        <li class=but_navegar><%= link_to "Back", root_path %></li>
+    </ul>
+</nav>
 
 <% @news.each do |item| %>
-    <h2><%= item.title %></h2>
-    <p><%= item.description %></p>
-    <a href="<%= item.link %>">Leia mais</a>
+    <div class="news">
+        <h2><%= item.title %></h2>
+        <p><%= item.description %></p>
+        <a href="<%= item.link %>">Leia mais</a>
+    </div>
 <% end %>

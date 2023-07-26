@@ -5,6 +5,13 @@
 </header>
 
 <main>
+    <nav>
+        <ul>
+            <li class="but_navegar"><%= link_to "New Article", new_article_path %></li>
+            <li class="but_navegar"><%= link_to "Back", root_path %></li>
+        </ul>
+    </nav>
+
     <div class="artigos">
         <ul class="lista-artigos">
             <% @articles.each do |article| %>
@@ -14,11 +21,4 @@
             <% end %>
         </ul>
     </div>
-    
-    <nav>
-        <ul>
-            <li class="but_navegar"><%= link_to "New Article", new_article_path %></li>
-            <li class="but_navegar"><%= link_to "Back", root_path %></li>
-        </ul>
-    </nav>
 </main>
